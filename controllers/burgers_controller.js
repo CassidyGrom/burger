@@ -60,7 +60,7 @@ const updateBurger = (burgerObj, burgerId) => {
   });
 };
 
-// DELETE A CAT
+// DELETE A Burger
 const deleteBurger = burgerId => {
   return new Promise((resolve, reject) => {
     connection.query(

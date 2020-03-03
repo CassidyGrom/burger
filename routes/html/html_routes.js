@@ -1,15 +1,15 @@
 // import express.Router()
-const router = require('express').Router();
+const router = require("express").Router();
 
 // import functionality to get all cats
-const { getBurgers } = require('../../controllers/burgers_controller');
+const { getBurgers } = require("../../controllers/burgers_controller");
 
 // set up root '/' GET route to serve home page with cat data
-router.get('/', (req, res) => {
+router.get("/", (req, res) => {
   // get all cat data
   getBurgers()
-    .then(catdata => {
-      res.render('home', { burgers: burgerdata });
+    .then(burgerdata => {
+      res.render("home", { burgers: burgerdata });
     })
     .catch(err => {
       res.status(500).end();

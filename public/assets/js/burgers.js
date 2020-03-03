@@ -41,7 +41,7 @@ $(".deleteBurger").on("click", function() {
 
   // delete cat
   $.ajax({
-    url: `/api/burger/${catId}`,
+    url: `/api/burger/${burgerId}`,
     method: "DELETE"
   }).then(response => {
     console.log(response);
