@@ -36,8 +36,8 @@ const createBurger = burgerObj => {
   });
 };
 
-// UPDATE A CAT'S ADOPTION STATUS
-// catObj => { adopted: true } OR {adopted: false}
+// UPDATE A burgers
+// catObj => { devoured: true } OR {devoured: false}
 const updateBurger = (burgerObj, burgerId) => {
   return new Promise((resolve, reject) => {
     connection.query(

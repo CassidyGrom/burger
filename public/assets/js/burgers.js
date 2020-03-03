@@ -39,9 +39,9 @@ $(".deleteBurger").on("click", function() {
   // get cat id
   const burgerId = $(this).attr("data-burgerid");
 
-  // delete cat
+  // delete burger
   $.ajax({
-    url: `/api/burger/${burgerId}`,
+    url: `/api/burgers/${burgerId}`,
     method: "DELETE"
   }).then(response => {
     console.log(response);
