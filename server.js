@@ -28,6 +28,5 @@ connection.connect(err => {
   if (err) {
     throw new Error(err);
   }
-
   app.listen(PORT, () => console.log(`Now listening on port ${PORT}`));
 });
